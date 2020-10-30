@@ -1,20 +1,20 @@
 package Ex1;
 
-import java.util.Arrays;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class TwoSum {
-    public int[] twoSum(int[] nums, int target) {
 
-        int length = nums.length;
-        //sort numbers
-        Arrays.sort(nums);
+    public static int[] twoSum(int[] nums, int target) {
 
-        //get intdex of number >= target
-        int
-        for(int i =0; i<nums.length;i++){
-
+        Map<Integer, Integer> numsMap = new HashMap<>();
+        for(int i  =0; i < nums.length; i++){
+            int comp =  target - nums[i];
+            if(numsMap.containsKey(comp)){
+                return new int[] {numsMap.get(comp), i};
+            }
+            numsMap.put(i, nums[i]);
         }
-
-        return null;
+        throw new UnsupportedOperationException("Not found two digits to sum!");
     }
 }
