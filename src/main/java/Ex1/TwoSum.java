@@ -13,7 +13,7 @@ public class TwoSum {
             if(numsMap.containsKey(comp)){
                 return new int[] {numsMap.get(comp), i};
             }
-            numsMap.put(i, nums[i]);
+            numsMap.put(nums[i],i);
         }
         throw new UnsupportedOperationException("Not found two digits to sum!");
     }
