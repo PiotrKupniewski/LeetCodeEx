@@ -1,7 +1,6 @@
-package Ex1;
+package ex1;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class TwoSum {
 
