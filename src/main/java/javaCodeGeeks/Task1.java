@@ -40,10 +40,7 @@ public class Task1 {
     }
 
     public static boolean checkIfCharactersExists(String test){
-        if(test.contains("1")  && test.contains("2") && test.contains("3")){
-            return true;
-        }
-        return false;
+        return test.contains("1") && test.contains("2") && test.contains("3");
     }
 
 
