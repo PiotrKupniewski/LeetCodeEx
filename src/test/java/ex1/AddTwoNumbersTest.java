@@ -29,6 +29,9 @@ class AddTwoNumbersTest {
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         ListNode listNode = AddTwoNumbers.addTwoNumbers(l1, l2);
+
+        System.out.println("list node val : " + listNode.getVal() + " , list node next val :  " + listNode.getNext().getVal());
+
         assertEquals(0, listNode.getNext().getVal());
         assertEquals(7, listNode.getNext().getNext().getVal());
         assertEquals(8, listNode.getVal());
