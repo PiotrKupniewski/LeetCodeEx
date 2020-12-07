@@ -40,7 +40,7 @@ public class Task1 {
     }
 
     public static boolean checkIfCharactersExists(String test){
-        if(test.indexOf("1") > -1 && test.indexOf("2") > -1 && test.indexOf("3") > -1){
+        if(test.contains("1")  && test.contains("2") && test.contains("3")){
             return true;
         }
         return false;
